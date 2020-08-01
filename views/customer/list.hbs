@@ -1,0 +1,27 @@
+<h3><a class="btn btn-secondary" href="/customer"><i class="fa fa-plus"></i> Create New</a> customer List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            {{!-- actions --}}
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+      {{!-- to show records from customer collection
+      list:docs(populated it in controlls) --}}
+        {{#each list}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.email}}</td>
+            <td>
+                <a href="/customer/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+
+                <a href="/customer/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

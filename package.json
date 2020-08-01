@@ -1,0 +1,35 @@
+{
+  "name": "nodelogin-project",
+  "version": "1.0.0",
+  "description": "connecting my node login page to back mongo db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sree-Vandana/nodeLogin-project.git"
+  },
+  "keywords": [
+    "node",
+    "login",
+    "mongodb"
+  ],
+  "author": "sree-vandana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sree-Vandana/nodeLogin-project/issues"
+  },
+  "homepage": "https://github.com/Sree-Vandana/nodeLogin-project#readme",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.7.6",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.9.26",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}

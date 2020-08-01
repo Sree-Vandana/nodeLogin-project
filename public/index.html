@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <h1>HEllo World!</h1>
+  <form method="POST" action="/post-feedback">
+    <label>Name:<input type="text" name="client-name" required></label>
+    <br>
+    <label>Email:<input type="text" name="client-email" required></label>
+    <br>
+    <label>Comment:<br><textarea name="comment"></textarea></label>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+<a href = "/view-feedback">view Feedback</a>
+</body>
+</html>
